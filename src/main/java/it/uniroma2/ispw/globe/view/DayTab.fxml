@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="600.0" minHeight="0.0" style="-fx-background-color: #314c1c; -fx-background-radius: 30;" stylesheets="@../../../../../../resources/css/general.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefWidth="600.0" spacing="5.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="18.0" prefWidth="58.0" style="-fx-background-color: #97c093; -fx-background-radius: 50;" text="City:" textAlignment="CENTER" textFill="#314c1c">
+               <font>
+                  <Font name="Apple SD Gothic Neo Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="cityLabel" prefHeight="18.0" prefWidth="525.0" text="City" textFill="#97c093">
+               <font>
+                  <Font name="Apple SD Gothic Neo Regular" size="14.0" />
+               </font>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="15.0" />
+         </VBox.margin>
+      </HBox>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#97c093" height="1.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-height: 100;" width="600.0" />
+      <Label alignment="CENTER" prefHeight="18.0" prefWidth="96.0" style="-fx-background-color: #97c093; -fx-background-radius: 50;" text="Attractions:" textAlignment="CENTER" textFill="#314c1c" VBox.vgrow="ALWAYS">
+         <font>
+            <Font name="Apple SD Gothic Neo Bold" size="14.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="5.0" top="5.0" />
+         </VBox.margin>
+      </Label>
+      <ScrollPane fx:id="scrollPane" fitToWidth="true" hbarPolicy="NEVER" maxHeight="400.0" minHeight="0.0" prefWidth="610.0" style="-fx-background-color: #314c1c; -fx-background-radius: 30;" vbarPolicy="NEVER">
+         <content>
+            <VBox minHeight="0.0" prefWidth="610.0" spacing="5.0" style="-fx-background-color: #314c1c;">
+               <padding>
+                  <Insets bottom="30.0" top="5.0" />
+               </padding>
+            </VBox>
+         </content>
+         <VBox.margin>
+            <Insets bottom="11.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+      </ScrollPane>
+   </children>
+</VBox>

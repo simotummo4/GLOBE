@@ -1,0 +1,6 @@
+it/uniroma2/ispw/globe/controller/applicationcontroller/RequestItineraryControllerTest.class
+it/uniroma2/ispw/globe/bean/ItineraryBeanTest.class
+it/uniroma2/ispw/globe/controller/applicationcontroller/AcceptItineraryControllerTest.class
+it/uniroma2/ispw/globe/bean/RequestBeanTest.class
+it/uniroma2/ispw/globe/controller/applicationcontroller/ManageItineraryControllerTest.class
+it/uniroma2/ispw/globe/controller/applicationcontroller/LogInControllerTest.class

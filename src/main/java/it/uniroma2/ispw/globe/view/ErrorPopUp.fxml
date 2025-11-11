@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="400.0" style="-fx-background-color: #97c093; -fx-background-radius: 50;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="190.0" prefWidth="390.0" spacing="5.0" style="-fx-background-radius: 50; -fx-background-color: #97c093; -fx-border-color: #314c1c; -fx-border-radius: 50; -fx-border-width: 5;" stylesheets="@../../../../../../resources/css/general.css">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="100.0" spacing="3.0">
+               <children>
+                  <Label fx:id="errorLabel" styleClass="label-title-dark" text="Label" />
+                  <ScrollPane hbarPolicy="NEVER" minHeight="0.0" prefWidth="380.0" style="-fx-background-color: #97c093;" vbarPolicy="NEVER">
+                     <content>
+                        <VBox fx:id="citiesVBox" prefWidth="378.0" style="-fx-background-color: #97c093;">
+                           <padding>
+                              <Insets left="8.0" right="8.0" />
+                           </padding>
+                           <children>
+                              <Label fx:id="descriptionLabel" alignment="TOP_LEFT" prefWidth="362.0" style="-fx-background-color: #97c093;" styleClass="label-center-dark" stylesheets="@../../../../../../resources/css/general.css" text="asfakmsakfakfnasfnaflkasfakmsakfakfnasfnaflkasfakmsakfakfnasfnaflkvasfakmsakfakfnasfnaflkasfakmsakfakfnasfnaflkasfakmsakfakfnasfnaflkasfakmsakfakfnasfnaflkasfakmsakfakfnasfnaflkasfakmsakfakfnasfnaflkasfakmsakfakfnasfnaflkasfakmsakfakfnasfnaflkasfakmsakfakfnasfnaflkasfakmsakfakfnasfnaflk" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </VBox>
+            <Button fx:id="okButton" alignment="CENTER" contentDisplay="RIGHT" graphicTextGap="10.0" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" style="-fx-background-color: #314c1c; -fx-background-radius: 40;" text="Ok" textFill="#97c093">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</HBox>

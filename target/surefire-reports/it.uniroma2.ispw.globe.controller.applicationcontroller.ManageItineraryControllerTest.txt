@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: it.uniroma2.ispw.globe.controller.applicationcontroller.ManageItineraryControllerTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.958 s <<< FAILURE! -- in it.uniroma2.ispw.globe.controller.applicationcontroller.ManageItineraryControllerTest
+it.uniroma2.ispw.globe.controller.applicationcontroller.ManageItineraryControllerTest.testGetUserItinerariesCorrect -- Time elapsed: 0.012 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <false> but was: <true>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertFalse.failNotFalse(AssertFalse.java:63)
+	at org.junit.jupiter.api.AssertFalse.assertFalse(AssertFalse.java:36)
+	at org.junit.jupiter.api.AssertFalse.assertFalse(AssertFalse.java:31)
+	at org.junit.jupiter.api.Assertions.assertFalse(Assertions.java:227)
+	at it.uniroma2.ispw.globe@1.0-SNAPSHOT/it.uniroma2.ispw.globe.controller.applicationcontroller.ManageItineraryControllerTest.testGetUserItinerariesCorrect(ManageItineraryControllerTest.java:64)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+

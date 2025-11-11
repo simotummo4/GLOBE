@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="400.0" style="-fx-background-color: #97c093; -fx-background-radius: 50;" stylesheets="@../../../../../../resources/css/general.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.uniroma2.ispw.globe.controller.guicontroller.PaymentGUIController">
+   <children>
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="190.0" prefWidth="390.0" spacing="5.0" style="-fx-background-radius: 50; -fx-background-color: #97c093; -fx-border-color: #314c1c; -fx-border-radius: 50; -fx-border-width: 5;" stylesheets="@../../../../../../resources/css/general.css">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="77.0" prefWidth="380.0" spacing="20.0" stylesheets="@../../../../../../resources/css/general.css">
+               <children>
+                  <Label styleClass="label-title-dark" text="Payment Confirmed" />
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="userLabel" alignment="TOP_LEFT" prefHeight="16.0" prefWidth="175.0" styleClass="label-center-dark" stylesheets="@../../../../../../resources/css/general.css" text="user" textAlignment="CENTER" wrapText="true" />
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../resources/it/uniroma2/ispw/globe/dnext.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="agencyLabel" alignment="TOP_LEFT" prefHeight="0.0" prefWidth="175.0" styleClass="label-center-dark" stylesheets="@../../../../../../resources/css/general.css" text="agency" textAlignment="CENTER" wrapText="true" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <Label styleClass="label-dark" text="Rate Agency:" />
+                        <Slider fx:id="ratingSlider" blockIncrement="1.0" majorTickUnit="1.0" max="5.0" minorTickCount="0" styleClass="rating-slider" stylesheets="@../../../../../../resources/css/general.css" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER" prefHeight="42.0" prefWidth="380.0" spacing="60.0">
+               <children>
+                  <Button fx:id="closeButton" alignment="CENTER" contentDisplay="RIGHT" graphicTextGap="10.0" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" style="-fx-background-color: #314c1c; -fx-background-radius: 40;" text="Close" textFill="#97c093">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>

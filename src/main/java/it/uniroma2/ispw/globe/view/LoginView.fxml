@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #314c1c;" stylesheets="@../../../../../../resources/css/general.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.uniroma2.ispw.globe.controller.guicontroller.LogInGUIController">
+   <children>
+      <VBox layoutX="187.0" layoutY="164.0" spacing="150.0" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="170.0">
+         <children>
+            <VBox alignment="CENTER" layoutX="137.0" layoutY="300.0" spacing="20.0" AnchorPane.leftAnchor="190.0" AnchorPane.topAnchor="300.0">
+               <children>
+                  <Label fx:id="errorLabel" text="Username e Password errati o non presenti" textFill="RED" visible="false">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER" layoutX="127.0" layoutY="371.0" spacing="10.0" AnchorPane.leftAnchor="180.0" AnchorPane.topAnchor="300.0">
+                     <children>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../resources/it/uniroma2/ispw/globe/laccount.png" />
+                           </image>
+                        </ImageView>
+                        <TextField fx:id="usernameField" layoutX="65.0" prefHeight="40.0" prefWidth="300.0" promptText="Username" style="-fx-background-color: E7E7E7; -fx-background-radius: 40;">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="137.0" layoutY="381.0" spacing="10.0">
+                     <children>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../resources/it/uniroma2/ispw/globe/lpassword.png" />
+                           </image>
+                        </ImageView>
+                        <PasswordField fx:id="passwordField" prefHeight="40.0" prefWidth="300.0" promptText="Password" style="-fx-background-color: E7E7E7; -fx-background-radius: 40;">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                        </PasswordField>
+                     </children>
+                  </HBox>
+                  <VBox alignment="CENTER" spacing="10.0">
+                     <children>
+                        <Button fx:id="loginButton" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#logIn" prefHeight="50.0" prefWidth="140.0" style="-fx-background-color: #97c093; -fx-background-radius: 40;" text="Log in" textFill="#314c1c">
+                           <font>
+                              <Font name="Arial Bold" size="21.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="signinButton" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#signIn" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #314c1c; -fx-border-color: #97c093; -fx-border-width: 4; -fx-border-radius: 40; -fx-background-radius: 40;" text="Sign in" textFill="#97c093">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <Button fx:id="guestButton" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#logIn" prefHeight="37.0" prefWidth="300.0" style="-fx-background-color: #314c1c;" text="Enter as Guest (Demo version)" textAlignment="CENTER" textFill="#97c093" underline="true">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <VBox fx:id="signInVBox" alignment="TOP_CENTER" layoutX="83.0" layoutY="207.0" prefHeight="300.0" prefWidth="507.0" style="-fx-background-color: #314c1c;" visible="false">
+         <children>
+            <Label text="Vuoi registrarti come Agenzia?" textFill="#97c093">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="44.0" prefWidth="363.0" spacing="40.0">
+               <children>
+                  <Label fx:id="yesLabel" text="Si" textFill="#97c093" underline="true">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="noLabel" text="No" textFill="#97c093" underline="true">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <ImageView fitHeight="576.0" fitWidth="543.0" layoutX="720.0" layoutY="601.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="1.0">
+         <image>
+            <Image url="@../../../../../../resources/it/uniroma2/ispw/globe/Background.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

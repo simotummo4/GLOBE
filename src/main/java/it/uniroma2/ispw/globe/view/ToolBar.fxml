@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+
+<AnchorPane minWidth="1200.0" prefHeight="70.0" prefWidth="1200.0" stylesheets="@../../../../../../resources/css/ToolBar.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <StackPane prefHeight="70.0" prefWidth="1200.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="60.0" prefWidth="754.0" spacing="50.0" style="-fx-background-color: #97c093;" stylesheets="@../../../../../../resources/css/ToolBar.css">
+               <children>
+                  <Button fx:id="requestButton" alignment="BASELINE_LEFT" graphicTextGap="5.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#requestItinerary" prefHeight="60.0" prefWidth="200.0" styleClass="button-default" text="Richiedi" textFill="#2f471a">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                     <graphic>
+                        <HBox alignment="CENTER" prefHeight="48.0" prefWidth="80.0" style="-fx-background-color: #97c093; -fx-background-radius: 40;">
+                           <children>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../resources/it/uniroma2/ispw/globe/dhome.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="tripButton" alignment="BASELINE_LEFT" graphicTextGap="5.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#manageItinerary" prefHeight="60.0" prefWidth="200.0" styleClass="button-pressed" text="Trip" textFill="#97c093">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                     <graphic>
+                        <HBox alignment="CENTER" prefHeight="48.0" prefWidth="80.0" style="-fx-background-color: #97c093; -fx-background-radius: 40;">
+                           <children>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../resources/it/uniroma2/ispw/globe/dtrip.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+            <Button fx:id="agencyButton" alignment="BASELINE_LEFT" graphicTextGap="5.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#manageRequest" prefHeight="60.0" prefWidth="200.0" styleClass="button-pressed" text="Home" textAlignment="RIGHT" textFill="#2f471a">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <HBox alignment="CENTER" prefHeight="40.0" prefWidth="80.0" style="-fx-background-color: #97c093; -fx-background-radius: 40;">
+                     <children>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../resources/it/uniroma2/ispw/globe/dhome.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </graphic>
+            </Button>
+         </children>
+      </StackPane>
+      <Button fx:id="logOutButton" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#logOut" prefHeight="30.0" prefWidth="71.0" style="-fx-background-color: #97c093; -fx-border-color: #314c1c; -fx-border-width: 4; -fx-border-radius: 40; -fx-background-radius: 40;" text="Log Out" textFill="#314c1c" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="15.0">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

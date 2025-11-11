@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #314c1c;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.uniroma2.ispw.globe.controller.guicontroller.SignInGUIController">
+   <children>
+      <VBox layoutX="187.0" layoutY="164.0" spacing="150.0" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="170.0">
+         <children>
+            <VBox alignment="CENTER" layoutX="137.0" layoutY="300.0" spacing="20.0" AnchorPane.leftAnchor="190.0" AnchorPane.topAnchor="300.0">
+               <children>
+                  <Label fx:id="errorLabel" text="Username e Password errati o non presenti" textFill="RED" visible="false">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER" layoutX="137.0" layoutY="381.0" spacing="10.0">
+                     <children>
+                        <TextField fx:id="usernameField" prefHeight="40.0" prefWidth="300.0" promptText="Username" style="-fx-background-color: E7E7E7; -fx-background-radius: 20;">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                        </TextField>
+                        <PasswordField fx:id="passwordField" prefHeight="40.0" prefWidth="300.0" promptText="Password" style="-fx-background-color: E7E7E7; -fx-background-radius: 20;">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                        </PasswordField>
+                     </children>
+                  </HBox>
+                  <TextField fx:id="paymentCredentialsField" prefHeight="40.0" prefWidth="300.0" promptText="Payment Credentials" style="-fx-background-color: E7E7E7; -fx-background-radius: 20;">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </TextField>
+                  <VBox fx:id="agencyForm" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                     <children>
+                        <TextField fx:id="descriptionField" alignment="TOP_LEFT" prefHeight="77.0" prefWidth="610.0" promptText="Describe your agency ..." style="-fx-background-color: E7E7E7; -fx-background-radius: 20;">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                        </TextField>
+                        <Label text="Set your agency's itinerary preferences:" textFill="#97c093">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                           <children>
+                              <CheckBox fx:id="onTheRoadCheckBox" mnemonicParsing="false" text="On the Road" textFill="#97c093" />
+                              <CheckBox fx:id="natureCheckBox" mnemonicParsing="false" text="Nature" textFill="#97c093" />
+                              <CheckBox fx:id="cultureCheckBox" mnemonicParsing="false" text="Culture" textFill="#97c093" />
+                              <CheckBox fx:id="relaxCheckBox" mnemonicParsing="false" text="Relax" textFill="#97c093" />
+                              <CheckBox fx:id="cityCheckBox" mnemonicParsing="false" text="City" textFill="#97c093" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" spacing="10.0">
+                     <children>
+                        <CheckBox mnemonicParsing="false" onAction="#getAgencyForm" text="Do you want an agency account?" textFill="#97c093" underline="true">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </CheckBox>
+                        <Button fx:id="signinButton" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#signIn" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #314c1c; -fx-border-color: #97c093; -fx-border-width: 4; -fx-border-radius: 40; -fx-background-radius: 40;" text="Sign in" textFill="#97c093">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" layoutX="83.0" layoutY="207.0" prefHeight="300.0" prefWidth="507.0" style="-fx-background-color: #314c1c;" visible="false">
+         <children>
+            <Label text="Vuoi registrarti come Agenzia?" textFill="#97c093">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="44.0" prefWidth="363.0" spacing="40.0">
+               <children>
+                  <Label fx:id="yesLabel" text="Si" textFill="#97c093" underline="true">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="noLabel" text="No" textFill="#97c093" underline="true">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <ImageView fitHeight="576.0" fitWidth="543.0" layoutX="720.0" layoutY="601.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="1.0">
+         <image>
+            <Image url="@../../../../../../resources/it/uniroma2/ispw/globe/Background.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="backButton" alignment="CENTER" graphicTextGap="8.0" layoutX="10.0" layoutY="10.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#goBack" prefHeight="40.0" prefWidth="92.0" style="-fx-background-color: #97c093; -fx-background-radius: 40;" text="Back" textFill="#314c1c">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+               <image>
+                  <Image url="@../../../../../../resources/it/uniroma2/ispw/globe/dnext.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>
